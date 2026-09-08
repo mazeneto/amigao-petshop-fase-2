@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>amigão pet shop - Contato</title>
+    <meta name="description" content="Fale com o amigão pet shop: endereço, telefone, e-mail e horário de atendimento.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+<div class="moldura">
+
+<div id="faixa-status" class="faixa-status" role="status" aria-live="polite">
+    Carregando horário de funcionamento...
+</div>
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-petshop" aria-label="Menu principal">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/amigao-logo.png" alt="amigão pet shop" height="44">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro e Agendamento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="conteudo-principal" class="container my-5">
+    <h1>Fale Conosco</h1>
+    <p class="lead">Entre em contato com o amigão pet shop pelos canais abaixo:</p>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="list-group-item">Endereço: Rua dos Pets, 123 - Porto Alegre/RS</li>
+                <li class="list-group-item">Telefone: (51) 0000-0000</li>
+                <li class="list-group-item">WhatsApp: (51) 90000-0000</li>
+                <li class="list-group-item">E-mail: contato@amigaopetshop.com.br</li>
+                <li class="list-group-item">Horário de atendimento: segunda a sábado, das 9h às 18h</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <div class="card-petshop p-4">
+                <h2 class="h5">Quer agendar um serviço?</h2>
+                <p>Cadastre você e seu pet e escolha o melhor dia e horário para o banho e tosa.</p>
+                <a href="cadastro.html" class="btn btn-petshop">Ir para Cadastro e Agendamento</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="rodape-petshop">
+    <span class="marca-dagua" aria-hidden="true">amigão</span>
+    <div class="container-fluid px-4 px-lg-5 rodape-conteudo">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h2 class="h5 text-white">amigão pet shop</h2>
+                <p>Projeto acadêmico desenvolvido para a disciplina de Fundamentos de Sistemas Web - PUCRS.</p>
+            </div>
+            <div class="col-md-4">
+                <h2 class="h6 text-white">Contato</h2>
+                <p>
+                    Rua dos Pets, 123 - Porto Alegre/RS<br>
+                    Telefone: (51) 0000-0000<br>
+                    E-mail: contato@amigaopetshop.com.br
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2 class="h6 text-white">Navegação</h2>
+                <nav aria-label="Links do rodapé">
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="cadastro.html">Cadastro e Agendamento</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <hr>
+        <p class="mb-0">amigão pet shop &copy; <span id="ano-atual">2026</span> - Todos os direitos reservados. Autor: José Neto.</p>
+    </div>
+</footer>
+
+</div><!-- /.moldura -->
+
+<button id="botao-topo" aria-label="Voltar ao topo da página">&uarr;</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

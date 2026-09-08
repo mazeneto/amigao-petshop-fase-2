@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>amigão pet shop - Início</title>
+    <meta name="description" content="amigão pet shop - produtos e serviços de banho e tosa, com agendamento de tele-busca.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+<!-- Moldura: todo o site vive dentro deste cartão creme, sobre o fundo
+     verde-limão da página - é o elemento de assinatura visual do projeto. -->
+<div class="moldura">
+
+    <div id="faixa-status" class="faixa-status" role="status" aria-live="polite">
+        Carregando horário de funcionamento...
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-petshop" aria-label="Menu principal">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/amigao-logo.png" alt="amigão pet shop" height="44">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro e Agendamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <p class="saudacao fw-bold mb-2" id="saudacao-dinamica" style="font-family: var(--fonte-dado); text-transform: uppercase; letter-spacing: .05em;">Carregando...</p>
+                        <h1 class="mb-3">O melhor spa-day<br>do seu pet</h1>
+                        <p class="lead mx-auto">Produtos selecionados e banho e tosa com carinho de verdade - com tele-busca, se você preferir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faixa de "agendamento rápido": resume os passos do formulário de
+             cadastro.html e já leva a pessoa direto para lá. -->
+        <div class="container">
+            <div class="faixa-agendamento">
+                <div class="row align-items-center g-3">
+                    <div class="col-6 col-md-3 campo-resumo">
+                        <span class="rotulo">Serviço</span>
+                        <span class="valor">Banho e Tosa</span>
+                    </div>
+                    <div class="col-6 col-md-3 campo-resumo border-start">
+                        <span class="rotulo">Agendamento</span>
+                        <span class="valor">Tele-busca ou Local</span>
+                    </div>
+                    <div class="col-6 col-md-3 campo-resumo border-start">
+                        <span class="rotulo">Horário</span>
+                        <span class="valor">Seg. a sáb., 9h-18h</span>
+                    </div>
+                    <div class="col-6 col-md-2 campo-resumo border-start">
+                        <span class="rotulo">Porte</span>
+                        <span class="valor">Todos</span>
+                    </div>
+                    <div class="col-12 col-md-1 text-md-end">
+                        <a href="cadastro.html" class="btn-agendamento-rapido" aria-label="Ir para o cadastro e agendamento">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        <div class="container mt-5">
+
+            <!-- Carrossel Bootstrap: destaca os 3 pilares da loja -->
+            <div id="carrossel-petshop" class="carousel slide mb-5" data-bs-ride="carousel" aria-label="Destaques do amigão pet shop">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrossel-petshop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1: Produtos de qualidade"></button>
+                    <button type="button" data-bs-target="#carrossel-petshop" data-bs-slide-to="1" aria-label="Slide 2: Banho e tosa com carinho"></button>
+                    <button type="button" data-bs-target="#carrossel-petshop" data-bs-slide-to="2" aria-label="Slide 3: Tele-busca no seu endereço"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/carousel-produtos.jpg" class="d-block w-100" alt="Ilustração representando produtos de qualidade para pets, como ração, acessórios e itens de higiene">
+                        <div class="carousel-caption">
+                            <h2 class="h4">Produtos selecionados</h2>
+                            <p>Acessórios, rações e itens de higiene para o dia a dia do seu pet.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carousel-banho.jpg" class="d-block w-100" alt="Ilustração representando o serviço de banho e tosa realizado com cuidado">
+                        <div class="carousel-caption">
+                            <h2 class="h4">Banho e tosa com carinho</h2>
+                            <p>Equipe treinada para cuidar do seu pet com tranquilidade.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carousel-telebusca.jpg" class="d-block w-100" alt="Ilustração representando o serviço de tele-busca, com o pet sendo buscado em casa">
+                        <div class="carousel-caption">
+                            <h2 class="h4">Tele-busca no seu endereço</h2>
+                            <p>Agende e nós buscamos e entregamos seu pet, sem complicação.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-petshop" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Slide anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrossel-petshop" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo slide</span>
+                </button>
+            </div>
+
+            <!-- Cartões com anéis de porcentagem (CSS puro, via conic-gradient) -->
+            <section class="my-5" aria-labelledby="titulo-numeros">
+                <h2 id="titulo-numeros" class="h4 mb-4">Por que escolher o amigão</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="cartao-estatistica tom-rosa" tabindex="0">
+                            <div class="anel-percentual" style="--valor: 98; --cor-anel: var(--cor-rosa-forte);">
+                                <div class="miolo">98%</div>
+                            </div>
+                            <div class="conteudo-estatistica">
+                                <h3 class="h6 mb-1">Tutores satisfeitos</h3>
+                                <p class="small mb-0">A maioria dos tutores retorna para novos banhos e tosas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cartao-estatistica tom-limao" tabindex="0">
+                            <div class="anel-percentual" style="--valor: 100; --cor-anel: var(--cor-primaria);">
+                                <div class="miolo">100%</div>
+                            </div>
+                            <div class="conteudo-estatistica">
+                                <h3 class="h6 mb-1">Produtos com nota fiscal</h3>
+                                <p class="small mb-0">Toda compra sai com nota e garantia do fornecedor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cartao-estatistica tom-laranja" tabindex="0">
+                            <div class="anel-percentual" style="--valor: 70; --cor-anel: var(--cor-laranja);">
+                                <div class="miolo">70%</div>
+                            </div>
+                            <div class="conteudo-estatistica">
+                                <h3 class="h6 mb-1">Preferem tele-busca</h3>
+                                <p class="small mb-0">A maior parte dos agendamentos escolhe a busca em casa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-muted small mt-3 mb-0">Números ilustrativos, usados apenas para fins deste projeto acadêmico.</p>
+            </section>
+
+            <!-- Seção de destaque institucional, com foto e etiqueta "sticker" -->
+            <section class="secao-destaque my-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-5">
+                        <div class="foto-com-etiqueta">
+                            <img src="assets/img/destaque-pet-banho.jpg" alt="Ilustração de um pet feliz e limpo, logo após o banho e a tosa">
+                            <span class="etiqueta-girada">amigão<br>banho + tosa</span>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="display-6">Cuidado de<br>verdade</h2>
+                        <p class="lead">Com técnicas de banho e tosa cuidadosas e atenção a cada detalhe, ajudamos o seu pet a se sentir bem por dentro e por fora.</p>
+                        <p>Confie em quem trata seu pet como parte da família - porque cada focinho merece brilhar.</p>
+                        <a href="servicos.html" class="btn btn-petshop">Conhecer os serviços</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tira de fotos (mosaico) -->
+            <section class="row g-3 mb-4" aria-label="Galeria de fotos do amigão pet shop">
+                <div class="col-6 col-md-3">
+                    <img src="assets/img/mosaico-acessorios.jpg" class="tira-fotos" alt="Prateleira de acessórios do petshop">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="assets/img/mosaico-banho.jpg" class="tira-fotos" alt="Área de banho do petshop">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="assets/img/mosaico-tosa.jpg" class="tira-fotos" alt="Área de tosa do petshop">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="assets/img/mosaico-loja.jpg" class="tira-fotos" alt="Fachada do amigão pet shop">
+                </div>
+            </section>
+
+            <section class="row g-4 mb-5" aria-label="Resumo do que oferecemos">
+                <div class="col-md-4">
+                    <div class="card-petshop p-4">
+                        <h2 class="h5">Acessórios, ração e higiene</h2>
+                        <p>Pelo menos dois produtos de cada categoria, prontos para entrega.</p>
+                        <a href="produtos.html">Ver produtos &rarr;</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-petshop p-4">
+                        <h2 class="h5">Banho e tosa</h2>
+                        <p>Com ou sem tele-busca, você escolhe o que for mais prático.</p>
+                        <a href="servicos.html">Ver serviços &rarr;</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-petshop p-4">
+                        <h2 class="h5">Cadastro e agendamento</h2>
+                        <p>Cadastre você e seu pet e marque o melhor dia e horário.</p>
+                        <a href="cadastro.html">Fazer cadastro &rarr;</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="rodape-petshop">
+        <span class="marca-dagua" aria-hidden="true">amigão</span>
+        <div class="container-fluid px-4 px-lg-5 rodape-conteudo">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h2 class="h5 text-white">amigão pet shop</h2>
+                    <p>Projeto acadêmico desenvolvido para a disciplina de Fundamentos de Sistemas Web - PUCRS.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="h6 text-white">Contato</h2>
+                    <p>
+                        Rua dos Pets, 123 - Porto Alegre/RS<br>
+                        Telefone: (51) 0000-0000<br>
+                        E-mail: contato@amigaopetshop.com.br
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="h6 text-white">Navegação</h2>
+                    <nav aria-label="Links do rodapé">
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="produtos.html">Produtos</a></li>
+                            <li><a href="servicos.html">Serviços</a></li>
+                            <li><a href="cadastro.html">Cadastro e Agendamento</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <hr>
+            <p class="mb-0">amigão pet shop &copy; <span id="ano-atual">2026</span> - Todos os direitos reservados. Autor: José Neto.</p>
+        </div>
+    </footer>
+
+</div><!-- /.moldura -->
+
+<button id="botao-topo" aria-label="Voltar ao topo da página">&uarr;</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

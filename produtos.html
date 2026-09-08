@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>amigão pet shop - Produtos</title>
+    <meta name="description" content="Produtos do amigão pet shop: acessórios, rações não perecíveis e itens de higiene e limpeza.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+<div class="moldura">
+
+<div id="faixa-status" class="faixa-status" role="status" aria-live="polite">
+    Carregando horário de funcionamento...
+</div>
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-petshop" aria-label="Menu principal">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/amigao-logo.png" alt="amigão pet shop" height="44">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro e Agendamento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="conteudo-principal" class="container my-5">
+    <h1>Nossos Produtos</h1>
+    <p class="lead">Pelo menos dois produtos de cada categoria: acessórios, rações não perecíveis e produtos de higiene e limpeza.</p>
+
+    <!-- Categoria: Acessórios -->
+    <section class="mb-5" aria-labelledby="titulo-acessorios">
+        <h2 id="titulo-acessorios" class="h3 mb-3">Acessórios</h2>
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-6">
+                <article class="card-petshop">
+                    <img src="assets/img/produto-coleira.png" alt="Coleira Ajustável Confort, na cor azul, para cães de pequeno e médio porte">
+                    <div class="p-3">
+                        <span class="badge badge-categoria mb-2">Acessório</span>
+                        <h3 class="h6">Coleira Ajustável Confort</h3>
+                        <p class="small">Coleira em nylon resistente, ajustável, indicada para cães de pequeno e médio porte. Disponível em várias cores.</p>
+                        <p class="preco">R$ 39,90</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-sm-6 col-lg-6">
+                <article class="card-petshop">
+                    <img src="assets/img/produto-cama.png" alt="Cama Pet Redonda Soft, acolchoada, na cor rosa">
+                    <div class="p-3">
+                        <span class="badge badge-categoria mb-2">Acessório</span>
+                        <h3 class="h6">Cama Pet Redonda Soft</h3>
+                        <p class="small">Cama redonda acolchoada, tecido macio e antiderrapante, ideal para cães e gatos de todos os tamanhos.</p>
+                        <p class="preco">R$ 89,90</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categoria: Rações não perecíveis -->
+    <section class="mb-5" aria-labelledby="titulo-racoes">
+        <h2 id="titulo-racoes" class="h3 mb-3">Rações não perecíveis</h2>
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-6">
+                <article class="card-petshop">
+                    <img src="assets/img/produto-racao-golden.png" alt="Pacote de Ração Golden Fórmula Adulto de 15 quilos">
+                    <div class="p-3">
+                        <span class="badge badge-categoria mb-2">Ração</span>
+                        <h3 class="h6">Ração Golden Fórmula Adulto 15kg</h3>
+                        <p class="small">Ração completa para cães adultos de raças médias e grandes, rica em proteínas e nutrientes essenciais.</p>
+                        <p class="preco">R$ 159,90</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-sm-6 col-lg-6">
+                <article class="card-petshop">
+                    <img src="assets/img/produto-racao-premier.png" alt="Pacote de Ração Premier Pet para gatos castrados de 10 quilos">
+                    <div class="p-3">
+                        <span class="badge badge-categoria mb-2">Ração</span>
+                        <h3 class="h6">Ração Premier Pet Gatos Castrados 10kg</h3>
+                        <p class="small">Ração formulada especialmente para gatos castrados, auxiliando no controle de peso e saúde urinária.</p>
+                        <p class="preco">R$ 134,90</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categoria: Higiene e limpeza -->
+    <section class="mb-3" aria-labelledby="titulo-higiene">
+        <h2 id="titulo-higiene" class="h3 mb-3">Produtos de higiene e limpeza</h2>
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-6">
+                <article class="card-petshop">
+                    <img src="assets/img/produto-tapete.png" alt="Pacote de Tapete Higiênico Super Absorvente com 30 unidades">
+                    <div class="p-3">
+                        <span class="badge badge-categoria mb-2">Higiene</span>
+                        <h3 class="h6">Tapete Higiênico Super Absorvente (30 un.)</h3>
+                        <p class="small">Tapete higiênico com gel absorvente e adesivo antideslizante, indicado para cães de todos os portes.</p>
+                        <p class="preco">R$ 54,90</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-sm-6 col-lg-6">
+                <article class="card-petshop">
+                    <img src="assets/img/produto-fralda.png" alt="Pacote de Fralda Descartável para cães, tamanho M, com 16 unidades">
+                    <div class="p-3">
+                        <span class="badge badge-categoria mb-2">Higiene</span>
+                        <h3 class="h6">Fralda Descartável para Cães M (16 un.)</h3>
+                        <p class="small">Fralda descartável com fita adesiva ajustável, alta absorção, ideal para cadelas no cio, idosos ou pets incontinentes.</p>
+                        <p class="preco">R$ 44,90</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <p class="mt-4">Quer agendar um serviço para o seu pet? <a href="cadastro.html">Faça o cadastro e o agendamento aqui</a>.</p>
+</main>
+
+<footer class="rodape-petshop">
+    <span class="marca-dagua" aria-hidden="true">amigão</span>
+    <div class="container-fluid px-4 px-lg-5 rodape-conteudo">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h2 class="h5 text-white">amigão pet shop</h2>
+                <p>Projeto acadêmico desenvolvido para a disciplina de Fundamentos de Sistemas Web - PUCRS.</p>
+            </div>
+            <div class="col-md-4">
+                <h2 class="h6 text-white">Contato</h2>
+                <p>
+                    Rua dos Pets, 123 - Porto Alegre/RS<br>
+                    Telefone: (51) 0000-0000<br>
+                    E-mail: contato@amigaopetshop.com.br
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2 class="h6 text-white">Navegação</h2>
+                <nav aria-label="Links do rodapé">
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="cadastro.html">Cadastro e Agendamento</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <hr>
+        <p class="mb-0">amigão pet shop &copy; <span id="ano-atual">2026</span> - Todos os direitos reservados. Autor: José Neto.</p>
+    </div>
+</footer>
+
+</div><!-- /.moldura -->
+
+<button id="botao-topo" aria-label="Voltar ao topo da página">&uarr;</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
