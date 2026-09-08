@@ -372,6 +372,8 @@ textarea:focus-visible,
 
 .foto-com-etiqueta img {
     width: 100%;
+    max-height: 400px;
+    object-fit: cover;
     border-radius: var(--raio);
     box-shadow: var(--sombra);
 }
